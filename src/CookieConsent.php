@@ -67,7 +67,7 @@ class CookieConsent
      */
     public function content(array $cookieConfig = [])
     {
-        return view('laravel-cookie-consent::cookie-consent', compact('cookieConfig'));
+        return view('cookie-consent::cookie-consent', compact('cookieConfig'));
     }
 
     /**
