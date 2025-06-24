@@ -51,6 +51,11 @@ class CookieConsentServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/cookie-consent'),
         ], 'cookie-consent-views');
+
+        // ✅ Publish JS assets to resources/js
+        $this->publishes([
+            __DIR__.'/../assets/js' => resource_path('js/vendor/laravel-cookie-consent'),
+        ], 'cookie-consent-js');
         // $this->commands($this->registerCommands());
     }
 
