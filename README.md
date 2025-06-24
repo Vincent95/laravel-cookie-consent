@@ -29,7 +29,7 @@ To get started with Cookie Consent, follow these simple steps:
 1. Install the package via Composer:
 
 ```bash
-composer require devrabiul/laravel-cookie-consent
+composer require signdeer/laravel-cookie-consent
 ```
 
 2. Publish the package resources by running: (Normal publish)
