@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Devrabiul\\LaravelCookieConsent\\' => array($baseDir . '/src'),
+    'Devrabiul\\CookieConsent\\' => array($baseDir . '/src'),
 );

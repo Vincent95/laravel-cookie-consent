@@ -9,12 +9,12 @@ class ComposerStaticInit097b259ba67d03f0111b724291f0acdf
     public static $prefixLengthsPsr4 = array (
         'D' => 
         array (
-            'Devrabiul\\LaravelCookieConsent\\' => 31,
+            'Devrabiul\\CookieConsent\\' => 24,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Devrabiul\\LaravelCookieConsent\\' => 
+        'Devrabiul\\CookieConsent\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
