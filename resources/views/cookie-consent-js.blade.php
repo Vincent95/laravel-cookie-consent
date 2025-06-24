@@ -1,3 +1,7 @@
+<script>
+  window.__COOKIE_CATEGORIES__ = @json($cookieConfig['cookie_categories']);
+</script>
+
 {{-- <script src="{{ url('vendor/laravel-cookie-consent/assets/js/script.js') }}"></script> --}}
 {{-- <script src="{{ route('laravel-cookie-consent.script-utils') }}"></script> --}}
 
