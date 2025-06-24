@@ -1,5 +1,20 @@
 "use strict";
 
+export function getCookiePreferences() {
+    const name = 'cookie_preferences=';
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(';');
+    
+    for(let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i].trim();
+        if (cookie.indexOf(name) === 0) {
+            return JSON.parse(cookie.substring(name.length, cookie.length));
+        }
+    }
+    return null;
+}
+
+
 export function initCookieConsent() {
     document.addEventListener('DOMContentLoaded', function () {
         // DOM Elements
@@ -161,20 +176,6 @@ export function initCookieConsent() {
             expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000));
             const secureFlag = location.protocol === 'https:' ? "; Secure" : "";
             document.cookie = `cookie_preferences=${JSON.stringify(preferences)}; expires=${expires.toUTCString()}; path=/; SameSite=Lax${secureFlag}`;
-        }
-        
-        function getCookiePreferences() {
-            const name = 'cookie_preferences=';
-            const decodedCookie = decodeURIComponent(document.cookie);
-            const cookieArray = decodedCookie.split(';');
-            
-            for(let i = 0; i < cookieArray.length; i++) {
-                let cookie = cookieArray[i].trim();
-                if (cookie.indexOf(name) === 0) {
-                    return JSON.parse(cookie.substring(name.length, cookie.length));
-                }
-            }
-            return null;
         }
 
         // Make them available globally
