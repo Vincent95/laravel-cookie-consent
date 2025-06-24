@@ -1,5 +1,7 @@
 "use strict";
 
+import { getCookiePreferences } from "./script";
+
 /**
  * @param {Object} cookieCategories - Map of category to { js_action: string }
  */
