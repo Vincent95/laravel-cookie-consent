@@ -1,5 +1,5 @@
 {
-    "name": "devrabiul/laravel-cookie-consent",
+    "name": "signdeer/laravel-cookie-consent",
     "type": "library",
     "description": "A GDPR-compliant cookie consent solution for Laravel applications with fully customizable cookie banners, granular consent control, and enterprise-grade compliance features.",
     "keywords": ["laravel", "cookie", "consent", "gdpr", "compliance", "banner", "privacy"],
