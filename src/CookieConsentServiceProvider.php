@@ -45,8 +45,7 @@ class CookieConsentServiceProvider extends ServiceProvider
 
     private function registerResources(): void {
         $this->loadRoutesFrom(__DIR__ . '/../routes/laravel-cookie-consent.php');
-        // $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-cookie-consent');
-            $this->loadViewsFrom(resource_path('views/vendor/cookie-consent'), 'cookie-consent');
+        $this->loadViewsFrom(resource_path('views/vendor/cookie-consent'), 'cookie-consent');
 
         // Allow publishing the views
         $this->publishes([

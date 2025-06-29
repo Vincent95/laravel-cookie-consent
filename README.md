@@ -1,4 +1,5 @@
 # Laravel Cookie Consent
+This fork is maintained by [Signdeer](https://signdeer.com), a secure, modern platform for e-signatures, approvals, and digital document workflows built for African teams and global standards.
 
 A GDPR-compliant solution offering enterprise-grade compliance with fully customizable cookie banners for Laravel
 applications. Simplifies regulatory requirements while maintaining excellent user experience and complete customization
